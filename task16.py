@@ -7,3 +7,13 @@
 # 1 2 3 4 5
 # 3
 # -> 1
+ 
+n = int(input('Введите количество элементов в массиве: '))
+list_array = [int(i) for i in input().split()]
+print(list_array)
+number = int(input('Введите искомое число: '))
+count = 0
+for i in range (len(list_array)-1):
+    if list_array[i] == number:
+        count+=1
+print (f"Число {number} встречается {count} раз/раза.")
