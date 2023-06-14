@@ -7,5 +7,5 @@ st = int(input('Введите степень: '))
 def qwerty(n,m):
     if m==0:
         return (1)
-    return 
+    return n*qwerty(n,m-1)
 print(qwerty(num,st))
